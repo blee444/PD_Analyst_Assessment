@@ -1,0 +1,10 @@
+name: pd_analyst_assessment
+title:
+username: blee444
+account: blee444
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16399526
+bundleId: 11423890
+url: https://blee444.shinyapps.io/pd_analyst_assessment/
+version: 1
