@@ -11,21 +11,20 @@ library(DBI)
 # SOURCE HELPERS AND DATA
 # ================================
 
-pitches <- read.csv("/Users/brianlee/Downloads/pd_analyst_pitches.csv")
-events <- read.csv("/Users/brianlee/Downloads/pd_analyst_events.csv")
-goals <- read.csv("/Users/brianlee/Downloads/pd_analyst_goals.csv")
+pitches <- read.csv("Data/pd_analyst_pitches.csv")
+events  <- read.csv("Data/pd_analyst_events.csv")
+goals   <- read.csv("Data/pd_analyst_goals.csv")
 
 pitches$sched_date <- as.Date(pitches$sched_date, format = "%m/%d/%Y") 
 events$sched_date <- as.Date(events$sched_date, format = "%m/%d/%Y") 
 
-source("~/Downloads/HOU/HOU_PD_Graphs.R")
-source("~/Downloads/HOU/HOU_PD_Splits.R")
-source("/Users/brianlee/Documents/GitHub/PD_Analyst_Assessment/Helpers/HOU_PD_Calcs.R")
-source("~/Downloads/HOU/HOU_PD_Master_Function.R")
-source("~/Downloads/HOU/HOU_PD_Goals.R")
-source("~/Downloads/HOU/HOU_PD_Goal_Checks.R")
-source("~/Downloads/HOU/HOU_PD_PDF.R") 
-
+source("Helpers/HOU_PD_Graphs.R")
+source("Helpers/HOU_PD_Splits.R")
+source("Helpers/HOU_PD_Calcs.R")
+source("Helpers/HOU_PD_Master_Function.R")
+source("Helpers/HOU_PD_Goals.R")
+source("Helpers/HOU_PD_Goal_Checks.R")
+source("Helpers/HOU_PD_PDF.R")
 
 # ================================
 # UI
